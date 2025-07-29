@@ -1,0 +1,424 @@
+/* (existing styles retained — unchanged) */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+nav {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #222;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005ad6;
+}
+
+/* Profile Header */
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info h2 {
+  margin: 0;
+}
+
+.profile-info p {
+  margin: 0.25rem 0;
+}
+
+/* Event Layout */
+.event-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.event-card h4 {
+  margin-top: 0;
+}
+
+.event-card button {
+  margin-top: 0.5rem;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  background: linear-gradient(90deg, #843dd3, #6a5af9);
+  color: white;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+/* Welcome/Profile Card (Devcon style) */
+.welcome-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.welcome-card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Notifications */
+.section {
+  margin-bottom: 2rem;
+}
+
+.notification-card {
+  background: #f3f0ff;
+  border-radius: 12px;
+  padding: 1rem;
+  position: relative;
+}
+
+.notification-card .timestamp {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Featured */
+.featured-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.featured-card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.featured-card.purple {
+  background: linear-gradient(135deg, #b057f7, #843dd3);
+}
+
+.featured-card.blue {
+  background: linear-gradient(135deg, #6a5af9, #4f46e5);
+}
+
+/* Schedule Header */
+.highlight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtle-btn {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tabs-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  background: #eee;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #dcd3f6;
+  font-weight: bold;
+}
+
+/* Event List */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #eae6fd;
+  color: #843dd3;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* === CLEANUP: Removed unused session-detail-container, session-buttons, etc. === */
+
+/* === NEW: Session Detail UI Styles === */
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f6f2ff, #fff);
+}
+
+.header {
+  background: linear-gradient(to right, #7b2ff7, #f107a3);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.header-icons svg {
+  margin-left: 1rem;
+  color: white;
+}
+
+.video-section {
+  padding: 1rem;
+  text-align: center;
+}
+
+.video-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.video-thumbnail {
+  background: #e0e0e0;
+  border-radius: 1rem;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.session-content {
+  padding: 1.5rem;
+  background-color: #fff;
+}
+
+.session-description {
+  margin: 1rem 0;
+  color: #555;
+}
+
+.session-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.session-actions button {
+  flex: 1;
+  min-width: 45%;
+  padding: 0.75rem;
+  background: #f2f2f7;
+  border: none;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.prompt-box {
+  background: #f5f3ff;
+  color: #6c47ff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.speakers {
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.speaker-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+.speaker-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.speaker-handle {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.speaker-bio {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.event-forum {
+  margin-top: 2rem;
+}
+
+.forum-box {
+  background: #f8f8fa;
+  border: 1px dashed #ccc;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.bottom-buttons button {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: none;
+  background: #f5f5f5;
+  font-weight: 500;
+  color: #444;
+}
+
+.message-board {
+  margin-top: 2rem;
+}
+
+.message-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.message-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #843dd3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  background: #f3f0ff;
+  padding: 0.75rem;
+  border-radius: 10px;
+}
