@@ -22,7 +22,7 @@ This is a mock Devconnect-style frontend built with React, designed to showcase 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/devconnect-demo.git
+   git clone https://github.com/yea-80y/devconnect-demo.git
    cd devconnect-demo
 Install dependencies
 
