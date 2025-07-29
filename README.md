@@ -1,77 +1,81 @@
 # Devconnect Demo App (React + Swarm)
 
-This is a mock **Devconnect-style frontend** built with React, designed to showcase how Ethereum event sessions can be presented, personalized, and discussed in a decentralized way. It mimics the Devcon mobile app and includes user profile creation, session detail views, and an embedded discussion board.
+This is a mock Devconnect-style frontend built with React, designed to showcase how Ethereum event sessions can be presented, personalized, and discussed in a decentralized way. The interface mimics the Devcon mobile app and includes user profile creation, session detail views, and an embedded discussion board — all styled for a community-first experience.
 
 ---
 
 ## 🚀 Features
 
 - 📱 Devcon-style mobile UI
-- 👤 Create profile (name + profile picture, stored locally)
-- 🏠 Home screen with event cards
-- 📅 Session detail screen with:
-  - Title, time, location, speaker bio
-  - Buttons: "Attend", "Export", "Join Q&A", etc.
-- 💬 Embedded message board per session
-- 🔧 Mock event data (local only)
+- 👤 Create user profiles (name + profile picture, stored locally for now)
+- 🏠 Home screen with event cards and schedule previews
+- 📅 Session detail screens showing:
+  - Speaker bio, session title, time, and location
+  - Buttons like "Attend Session", "Mark as Interesting", "Join Q&A"
+  - Embedded discussion board for each session
+- 💬 Users can post messages using their profile
+- 🧪 Mock data used for event sessions and speaker details
 
 ---
 
-## 🛠️ Installation
+## 🛠️ Getting Started
 
-### 1. Clone the repo
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/devconnect-demo.git
+   cd devconnect-demo
+Install dependencies
 
-```bash
-git clone https://github.com/YOUR_USERNAME/devconnect-demo.git
-cd devconnect-demo
-2. Install dependencies
 bash
 Copy
 Edit
 npm install
-3. Start the app
+Run the development server
+
 bash
 Copy
 Edit
 npm run dev
-Open http://localhost:5173 in your browser.
+Then open http://localhost:5173 in your browser.
 
-🧪 Usage
-Start on the Landing screen.
+🧪 How to Use
+Start at the Landing page
 
-Click Create Your Profile to set a name + profile picture.
+Create your profile (image + name)
 
-Enter the Home screen to see session previews.
+Enter the Home screen to view session previews
 
-Click any session to view its full detail.
+Click any session to view its detail
 
-Post a message in the Event Forum — your profile is used automatically.
+Post in the session’s forum — your profile is used automatically
 
 🧠 Tech Stack
-React (Vite)
+React (with Vite)
 
 React Router
 
 Lucide Icons
 
-CSS (custom + utility styles)
+Custom CSS (mimicking Devcon’s mobile aesthetic)
 
-LocalStorage (temporary storage for profile + messages)
+LocalStorage (temporary user profile and forum state)
 
 🔮 Future Enhancements
-This prototype is the first step toward a fully decentralized event app. Future iterations will evolve to leverage Swarm as the primary storage and interaction layer.
+This app will evolve into a fully decentralized event platform.
 
-We plan to offer:
+We intend to:
 
-Decentralized user profiles, backed by cryptographic signatures and stored on Swarm
+Host the entire frontend app on Swarm (similar to the logic in our Swarm uploader)
 
-Swarm-hosted forums where users can post using their decentralized identity
+Store user profiles on Swarm, using cryptographic signatures for authenticity
 
-Persistent session content and app hosting directly on Swarm
+Enable session discussion boards to persist on Swarm, making comments decentralized and censorship-resistant
 
-Together, these changes will make the Devconnect app itself — and all interactions within it — entirely distributed and user-owned.
+Allow the Ethereum Foundation or other hosts to deploy their event instance of the app directly to Swarm for public access via ENS (e.g. devconnect.eth)
 
-📦 Folder Structure
+This will enable a seamless experience where the app itself, the user data, and the interactions all live on decentralized infrastructure.
+
+📁 Project Structure
 css
 Copy
 Edit
@@ -85,8 +89,8 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── README.md
-✅ Contributing
-This is a community-led prototype — fork it, extend it, or use it as inspiration for building decentralized apps on Swarm.
+🤝 Contributing
+This is a community-first prototype. Feel free to fork it, extend it, or use it to build event tools that embrace decentralization.
 
 📜 License
 MIT
@@ -97,4 +101,4 @@ Edit
 
 ---
 
-Let me know if you'd like a markdown `.md` file download, or for me to help commit this directly into your project repo.
+Let me know if you'd like a markdown file uploaded, or help deploying the app to Swarm.
